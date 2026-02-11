@@ -1,0 +1,40 @@
+[
+  {
+    "alert_id": "DEF-001",
+    "alert_name": "Windows Event Log Tampering",
+    "severity": "high",
+    "event_type": "log_cleared",
+    "reason": "Security event log was cleared",
+    "mitre": {
+      "tactic": "Defense Evasion",
+      "technique": "T1070.001 - Clear Windows Event Logs"
+    },
+    "evidence": {
+      "process_name": null,
+      "command_line": null,
+      "user": null,
+      "host": null,
+      "event_id": 1102
+    },
+    "timestamp": "2020-10-23T02:36:40.671Z"
+  },
+  {
+    "alert_id": "PRIV-001",
+    "alert_name": "Privileged Logon Detected",
+    "severity": "medium",
+    "event_type": "privileged_logon",
+    "reason": "User logged on with elevated privileges",
+    "mitre": {
+      "tactic": "Privilege Escalation",
+      "technique": "T1068 - Exploitation for Privilege Escalation"
+    },
+    "evidence": {
+      "process_name": null,
+      "command_line": null,
+      "user": "SYSTEM",
+      "host": null,
+      "event_id": 4672
+    },
+    "timestamp": "2020-10-23T02:36:43.585Z"
+  }
+]
